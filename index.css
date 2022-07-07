@@ -1,0 +1,684 @@
+/* 폰트 설정 */
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  html > body {
+    font-family:"GmarketSansMedium";
+    text-underline-position: under;
+  }
+  
+  
+  .container
+  { width:100%; height:1500px; background-image:url('bg.png'); } 
+  
+  #header{ 
+    position:fixed;
+    width:100%;
+    box-sizing: border-box;
+  
+    height:64px;
+  }
+  
+  #header nav{ top:0;
+    left:0; width:100%;
+    max-width:1280px; 
+    margin:0 auto;
+  } 
+  
+  .logo {
+      font-weight:bold;
+  
+    font-size:1.3rem;
+    float:left;
+    padding:19px;
+    color:white;
+  letter-spacing:2px;
+  }
+  /* 폰트 설정 */
+  @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+  
+  .notosanskr * {
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  
+  html > body {
+    font-family: "Noto Sans KR";
+    text-underline-position: under;
+  }
+  /* 노말라이즈 */
+  
+  
+  /* 라이브러리 */
+  
+  .top-bar{
+    z-index:9999px;
+  }
+  .container
+  { width:100%; height:70px; background-image:url('bg.png'); 
+  z-index:9999px;} 
+  
+  .con-min-wid {
+    min-width: 320px;
+  }
+  :root {
+    --site-width: 1280px;
+  }
+  
+  .con {
+    max-width: var(--site-width);
+  }
+  
+  #header{ 
+    position:fixed;
+    width:100%;
+    box-sizing: border-box;
+  
+    height:64px;
+  }
+  
+  #header nav{ top:0;
+    left:0; width:100%;
+    max-width:1280px; 
+    margin:0 auto;
+  } 
+  
+  .logo {
+      font-weight:bold;
+  
+    font-size:1.3rem;
+    float:left;
+    padding:19px;
+    color:white;
+  letter-spacing:2px;
+  }
+  
+  #header nav .logo img{
+    height:22px;}
+  
+  
+  
+  
+  
+  
+  #header nav ul li { padding:0 10px; line-height: 22px; 
+    text-decoration: none; 
+    color: white;
+    font-size:14px;
+  } 
+  #header nav ul li:last-child>a{
+    background-color:white;
+    color:black;
+    padding:13px 17px;
+    border-radius:20px;
+  }
+  
+  
+  /* 스크롤 내렸을때 CSS .active */ #header.active
+  { background:white;
+  border-bottom:0.1px #e1e1e1;
+    color:white;
+   transition:.2s;
+  } 
+  
+  
+  #header.active nav ul li,#header.active nav ul li a {color:black;} 
+  
+  #header.active .logo {
+    font-weight:bold;
+    color:black;
+    font-size:1.3rem;
+    letter-spacing:2px;
+  }
+  #header.active nav ul li:last-child>a{
+    background-color:black;
+    padding:13px 17px;
+    border-radius:20px;
+    color:white;
+  
+  }
+  
+  /*리스트 1*/
+  
+  /*그리드*/
+  
+  
+  .flex-grid {
+    display:flex;
+    flex-wrap:wrap;
+    --y-gap:0px;
+    --x-gap:0px;
+    --cc:3;
+    gap:var(--y-gap) var(--x-gap);
+  }
+  
+  .flex-grid > * {
+    width:calc(100% / var(--cc) - (var(--x-gap) * (var(--cc) - 1)) / var(--cc));
+  }
+  
+  /* 리스트1 반응형 */
+  
+  .list-1-page > .flex-grid {
+    --y-gap:32px;
+    --x-gap:16px;
+  }
+  
+  @media ( max-width:--site-width ) and ( min-width:767px ) {
+    .list-1-page > .flex-grid {
+      --cc:2;
+    }
+  }
+  
+  @media ( max-width:767px ) {
+    .list-1-page > .flex-grid {
+      --cc:2;
+    }
+    .list-1-page > .flex-grid li a:nth-child(2),
+    .list-1-page > .flex-grid li>div
+    {
+      font-size:15px;
+    }
+    .list-1-page > .flex-grid li a:nth-child(3),
+    .list-1-page > .flex-grid li>a:nth-child(5)
+    {
+      font-size:13px;
+    }
+    .list-1-title>h1{
+      font-size:15px;
+    }
+    .list-1-title>h2{
+      font-size:27px;
+    }
+  }
+  /*리스트1 끝*/
+  
+  
+  
+  /*리스트2*/
+  
+  /*그리드*/
+  
+  .list-2 {
+    display: flex;
+    flex-wrap: wrap;
+    --y-gap: 0px;
+    --x-gap: 0px;
+    --cc: 2;
+    gap: var(--y-gap) var(--x-gap);
+  }
+  
+  .flex-grid > * {
+    width: calc(100% / var(--cc) - (var(--x-gap) * (var(--cc) - 1)) / var(--cc));
+  }
+  
+  /* 리스트2 반응형 */
+  
+  .list-page-2 > .flex-grid {
+    --y-gap: 32px;
+    --x-gap: 16px;
+  }
+  
+  @media (max-width: --site-width) and (min-width: 767px) {
+    .list-page-2 > .flex-grid {
+      --cc: 2;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .list-page-2 > .flex-grid {
+      --cc: 1;
+    }
+    .list-page-2 > .flex-grid li a:nth-child(2){
+      font-size: 19px;
+    }
+    .list-page-2 > .flex-grid li a:nth-child(3),
+    .list-page-2 > .flex-grid li > a:nth-child(5) {
+      font-size: 13px;
+    }
+    .list-page-2 .list-title > h1 {
+      font-size: 15px;
+    }
+   .list-page-2 .list-title > h2 {
+      font-size: 26px;
+    }
+  }
+  /*리스트2 끝*/
+  
+  
+  
+  /*캐러셀*/
+  
+  /*네비게이션 버튼*/
+  
+  .button_nv_1 {
+    height: 440px;
+  }
+  
+  .slider-box-1 .swiper-button-next,
+  .slider-box-1 .swiper-button-prev {
+    position: static;
+    margin-top: 0;
+    width: auto;
+    height: auto;
+    padding: 2rem;
+  }
+  
+  .slider-box-1 .swiper-button-next::after,
+  .slider-box-1 .swiper-button-prev::after {
+    color: white;
+    display: inline-block;
+    font-size: 1rem;
+  }
+  
+  /* 슬라이더 */
+  .slider-box--1 {
+    height: 440px;
+  }
+  
+  .slider-1__slide-1 {
+    background-image: url(https://cdn.jsdelivr.net/gh/chaeryeong1/project_lion_img/docs/roblox_carousel_1920.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    background-color: black;
+  }
+  
+  /*텍스트박스*/
+  .swiper-wrapper .txt-box-1,.slide-1-1 .txt-box-1{
+    padding-bottom: 50px;
+    margin-left: 30px;
+    width:1000px;
+  }
+  .slide-1-1 .txt-box-1 {
+    color: white;
+  }
+  
+  .txt-box-1__title {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  
+  .txt-box-1__sub-title {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .txt-box-1__btn-more {
+    margin-top: 8px;
+    width:120px;
+    background-color: white;
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+  }
+  .txt-box-2{
+    width:200px;
+  }
+  .txt-box-2-title{
+    background-color:white;
+   opacity:50%;
+    padding:5px 10px;
+    font-size:0.75rem;
+    border-radius:5px;
+    
+  }
+  
+  /*슬라이더 2*/
+  
+  .slider-2__slide-2 {
+    background-image: url(https://cdn.jsdelivr.net/gh/chaeryeong1/project_lion_img/docs/clayful_carousel_1920.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+  }
+  
+  /*슬라이더 3*/
+  
+  .slider-3__slide-3 {
+    background-image: url(https://cdn.jsdelivr.net/gh/chaeryeong1/project_lion_img/docs/mbti_carousel_1920.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: auto 100%;
+  }
+  
+  
+  /*슬라이드 반응형*/
+  @media (max-width: 767px) {
+    .txt-box-1__title {
+      font-size: 1.45rem;
+    }
+  
+    .txt-box-1__sub-title {
+      font-size: 1rem;
+    }
+    .slider-1__slide-1{
+   background-size: auto 100%;
+    background-position:top;
+  background-color: black;
+      transition:1s;}
+    
+    .slider-2__slide-2{
+      background-image:url(https://cdn.jsdelivr.net/gh/chaeryeong1/project_lion_img/docs/clayful_carousel_768.png);
+    }
+   .slider-3__slide-3{
+   background-size: auto 65%;
+    background-position:center 35px;
+  background-color: #F2F9FF;
+     
+    }
+  }
+    @media (max-width: 500px){
+      
+      .slider-3__slide-3{
+   background-size: auto 60%;
+    background-position:top;
+  background-color: #F2F9FF;
+      
+  }
+    }
+  #header nav .logo img{
+    height:22px;}
+  
+  
+  
+  
+  
+  
+  #header nav ul li { padding:0 10px; line-height: 22px; 
+    text-decoration: none; 
+    color: white;
+    font-size:14px;
+  } 
+  #header nav ul li:last-child>a{
+    background-color:white;
+    color:black;
+    padding:13px 17px;
+    border-radius:20px;
+  }
+  
+  
+  /* 스크롤 내렸을때 CSS .active */ #header.active
+  { background:white;
+  border-bottom:0.1px #e1e1e1;
+    color:white;
+   transition:.2s;
+  } 
+  
+  
+  #header.active nav ul li,#header.active nav ul li a {color:black;} 
+  
+  #header.active .logo {
+    font-weight:bold;
+    color:black;
+    font-size:1.3rem;
+    letter-spacing:2px;
+  }
+  #header.active nav ul li:last-child>a{
+    background-color:black;
+    padding:13px 17px;
+    border-radius:20px;
+    color:white;
+  
+  }
+  
+  /*#header{
+    max-width:1023px;
+  }*/
+  
+  /* 라이브러리 */
+  
+  
+  .con-min-wid {
+    min-width: 320px;
+  }
+  :root {
+    --site-width: 1280px;
+  }
+  
+  .con {
+    max-width: var(--site-width);
+  }
+  
+  
+  /*리스트 1*/
+  
+  /*그리드*/
+  
+  
+  .flex-grid {
+    display:flex;
+    flex-wrap:wrap;
+    --y-gap:0px;
+    --x-gap:0px;
+    --cc:3;
+    gap:var(--y-gap) var(--x-gap);
+  }
+  
+  .flex-grid > * {
+    width:calc(100% / var(--cc) - (var(--x-gap) * (var(--cc) - 1)) / var(--cc));
+  }
+  
+  /* 리스트1 반응형 */
+  
+  .list-1-page > .flex-grid {
+    --y-gap:32px;
+    --x-gap:16px;
+  }
+  
+  @media ( max-width:--site-width ) and ( min-width:767px ) {
+    .list-1-page > .flex-grid {
+      --cc:2;
+    }
+  }
+  
+  @media ( max-width:767px ) {
+    .list-1-page > .flex-grid {
+      --cc:2;
+    }
+    .list-1-page > .flex-grid li a:nth-child(2),
+    .list-1-page > .flex-grid li>div
+    {
+      font-size:15px;
+    }
+    .list-1-page > .flex-grid li a:nth-child(3),
+    .list-1-page > .flex-grid li>a:nth-child(5)
+    {
+      font-size:13px;
+    }
+    .list-1-title>h1{
+      font-size:15px;
+    }
+    .list-1-title>h2{
+      font-size:27px;
+    }
+  }
+  /*리스트1 끝*/
+  
+  
+  
+  /*리스트2*/
+  
+  /*그리드*/
+  
+  .list-2 {
+    display: flex;
+    flex-wrap: wrap;
+    --y-gap: 0px;
+    --x-gap: 0px;
+    --cc: 2;
+    gap: var(--y-gap) var(--x-gap);
+  }
+  
+  .flex-grid > * {
+    width: calc(100% / var(--cc) - (var(--x-gap) * (var(--cc) - 1)) / var(--cc));
+  }
+  
+  /* 리스트2 반응형 */
+  
+  .list-page-2 > .flex-grid {
+    --y-gap: 32px;
+    --x-gap: 16px;
+  }
+  
+  @media (max-width: --site-width) and (min-width: 767px) {
+    .list-page-2 > .flex-grid {
+      --cc: 2;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .list-page-2 > .flex-grid {
+      --cc: 1;
+    }
+    .list-page-2 > .flex-grid li a:nth-child(2){
+      font-size: 19px;
+    }
+    .list-page-2 > .flex-grid li a:nth-child(3),
+    .list-page-2 > .flex-grid li > a:nth-child(5) {
+      font-size: 13px;
+    }
+    .list-page-2 .list-title > h1 {
+      font-size: 15px;
+    }
+   .list-page-2 .list-title > h2 {
+      font-size: 26px;
+    }
+  }
+  /*리스트2 끝*/
+  
+  
+  
+  /*캐러셀*/
+  
+  /*네비게이션 버튼*/
+  
+  .button_nv_1 {
+    height: 440px;
+  }
+  
+  .slider-box-1 .swiper-button-next,
+  .slider-box-1 .swiper-button-prev {
+    position: static;
+    margin-top: 0;
+    width: auto;
+    height: auto;
+    padding: 2rem;
+  }
+  
+  .slider-box-1 .swiper-button-next::after,
+  .slider-box-1 .swiper-button-prev::after {
+    color: white;
+    display: inline-block;
+    font-size: 1rem;
+  }
+  
+  /* 슬라이더 */
+  .slider-box--1 {
+    height: 440px;
+  }
+  
+  .slider-1__slide-1 {
+    background-image: url(https://cdn.jsdelivr.net/gh/chaeryeong1/project_lion_img/docs/roblox_carousel_1920.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    background-color: black;
+  }
+  
+  /*텍스트박스*/
+  .swiper-wrapper .txt-box-1,.slide-1-1 .txt-box-1{
+    padding-bottom: 50px;
+    margin-left: 30px;
+    width:1000px;
+  }
+  .slide-1-1 .txt-box-1 {
+    color: white;
+  }
+  
+  .txt-box-1__title {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  
+  .txt-box-1__sub-title {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .txt-box-1__btn-more {
+    margin-top: 8px;
+    width:120px;
+    background-color: white;
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+  }
+  .txt-box-2{
+    width:200px;
+  }
+  .txt-box-2-title{
+    background-color:white;
+   opacity:50%;
+    padding:5px 10px;
+    font-size:0.75rem;
+    border-radius:5px;
+    
+  }
+  
+  /*슬라이더 2*/
+  
+  .slider-2__slide-2 {
+    background-image: url(https://cdn.jsdelivr.net/gh/chaeryeong1/project_lion_img/docs/clayful_carousel_1920.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+  }
+  
+  /*슬라이더 3*/
+  
+  .slider-3__slide-3 {
+    background-image: url(https://cdn.jsdelivr.net/gh/chaeryeong1/project_lion_img/docs/mbti_carousel_1920.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: auto 100%;
+  }
+  
+  
+  /*슬라이드 반응형*/
+  @media (max-width: 767px) {
+    .txt-box-1__title {
+      font-size: 1.45rem;
+    }
+  
+    .txt-box-1__sub-title {
+      font-size: 1rem;
+    }
+    .slider-1__slide-1{
+   background-size: auto 100%;
+    background-position:top;
+  background-color: black;
+      transition:1s;}
+    
+    .slider-2__slide-2{
+      background-image:url(https://cdn.jsdelivr.net/gh/chaeryeong1/project_lion_img/docs/clayful_carousel_768.png);
+    }
+   .slider-3__slide-3{
+   background-size: auto 65%;
+    background-position:center 35px;
+  background-color: #F2F9FF;
+     
+    }
+  }
+    @media (max-width: 500px){
+      
+      .slider-3__slide-3{
+   background-size: auto 60%;
+    background-position:top;
+  background-color: #F2F9FF;
+      
+  }
+    }
